@@ -17,7 +17,7 @@ Este endpoint retorna uma lista de pessoas fictícias geradas automaticamente. �
 
 A API já está em produção e pode ser acessada no seguinte endereço:
 
-- **URL do endpoint**: `https://seu-app-railway.railway.app/person/:quantity`
+- **URL do endpoint**: `https://gerador-users-api-production.up.railway.app/person/:quantity`
 
 Aqui você pode substituir `:quantity` pela quantidade desejada de pessoas. Lembre-se de que o limite máximo de pessoas é **50**.
 
@@ -37,41 +37,36 @@ Cada pessoa gerada terá a seguinte estrutura:
   }
 }
 
-firstName: Nome da pessoa
+---
 
-surname: Sobrenome da pessoa
+## ⚠️ **Observações**
 
-contacts: Objeto com as informações de contato
-
-email: E-mail da pessoa
-
-phone: Número de telefone da pessoa
-
-🔄 Exemplo de Requisição
-
-GET /person/10
-
-Este exemplo retornaria uma lista de 10 pessoas fictícias.
-```
-
-⚠️ Observações
 O parâmetro quantity é obrigatório e deve ser um número.
 
 O valor máximo de pessoas retornadas é 50. Se o valor de quantity for maior que 50, o número será automaticamente limitado a 50.
 
 A API retorna sempre dados fictícios, e não deve ser usada para ambientes de produção.
 
-📄 Licença
+---
+
+## 📄 **Licença**
+
 Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para mais detalhes.
 
-👨‍💻 Autor
+---
+
+## 👨‍💻 **Autor**
+
 Nome: [Gabriel Alves]
 
 E-mail: [ga654066@gmail.com]
 
 GitHub: github.com/gabrieel1007
 
-🔧 Tecnologias Usadas
+---
+
+## 🔧 **Tecnologias Usadas**
+
 Node.js (v14+)
 
 NestJS
@@ -80,5 +75,9 @@ TypeScript
 
 Yarn (para gerenciar dependências)
 
-📜 Agradecimentos
+---
+
+## 📜 **Agradecimentos**
+
 Agradeço aos mantenedores e contribuintes das bibliotecas que tornam este projeto possível!
+```
