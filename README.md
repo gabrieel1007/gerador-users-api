@@ -36,6 +36,7 @@ Cada pessoa gerada terá a seguinte estrutura:
     "phone": 11999999999
   }
 }
+```
 
 ---
 
@@ -80,4 +81,3 @@ Yarn (para gerenciar dependências)
 ## 📜 **Agradecimentos**
 
 Agradeço aos mantenedores e contribuintes das bibliotecas que tornam este projeto possível!
-```
