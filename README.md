@@ -1,6 +1,8 @@
 # API de Pessoas Fictícias
 
-Este endpoint retorna uma lista de pessoas fictícias geradas automaticamente. Útil para testes, protótipos e integração de front-end.
+Este projeto tem como objetivo principal estudar conceitos de Domain-Driven Design (DDD), aplicando boas práticas de arquitetura e organização de código em aplicações back-end com NestJS.
+
+O endpoint disponibilizado retorna uma lista de pessoas fictícias geradas automaticamente. É útil para testes, protótipos e integração de front-end.
 
 ## 📍 **Endpoint**
 
