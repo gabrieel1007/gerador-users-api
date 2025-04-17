@@ -2,8 +2,8 @@
   "name": "gerador-users-api",
   "version": "0.0.1",
   "description": "",
-  "author": "",
-  "private": true,
+  "author": "Gabriel Alves",
+  "private": false,
   "license": "UNLICENSED",
   "engines": {
     "node": ">=20"

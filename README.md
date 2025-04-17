@@ -55,12 +55,6 @@ A API retorna sempre dados fictícios, e não deve ser usada para ambientes de p
 
 ---
 
-## 📄 **Licença**
-
-Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para mais detalhes.
-
----
-
 ## 👨‍💻 **Autor**
 
 Nome: [Gabriel Alves]
