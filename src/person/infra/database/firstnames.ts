@@ -48,4 +48,9 @@ export const firstname = [
   { name: 'William' },
   { name: 'Yuri' },
   { name: 'Zilda' },
+  { name: 'Ana' },
+  { name: 'Bruno' },
+  { name: 'Clara' },
+  { name: 'Diego' },
+  { name: 'Eduarda' },
 ];

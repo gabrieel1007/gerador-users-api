@@ -48,4 +48,9 @@ export const emails = [
   { email: 'william@yahoo.com' },
   { email: 'yuri@outlook.com' },
   { email: 'zilda@gmail.com' },
+  { email: 'ana@gmail.com' },
+  { email: 'bruno@yahoo.com' },
+  { email: 'clara@outlook.com' },
+  { email: 'diego@gmail.com' },
+  { email: 'eduarda@hotmail.com' },
 ];
