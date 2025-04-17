@@ -1,8 +1,11 @@
 # API de Pessoas Fictícias
 
-Este projeto tem como objetivo principal estudar conceitos de Domain-Driven Design (DDD), aplicando boas práticas de arquitetura e organização de código em aplicações back-end com NestJS.
+Este projeto tem como objetivo principal **estudar conceitos de Domain-Driven Design (DDD)**, aplicando boas práticas de arquitetura e organização de código em aplicações back-end com NestJS.
 
-O endpoint disponibilizado retorna uma lista de pessoas fictícias geradas automaticamente. É útil para testes, protótipos e integração de front-end.
+A API disponibiliza um endpoint que retorna uma lista de pessoas fictícias geradas automaticamente.  
+Os dados simulam uma base de dados, mas **são completamente mockados (falsos)** — ou seja, não existe persistência real, e nenhuma informação é salva em banco de dados.
+
+Essa API é ideal para testes, protótipos, integração com front-end e fins educacionais.
 
 ## 📍 **Endpoint**
 
