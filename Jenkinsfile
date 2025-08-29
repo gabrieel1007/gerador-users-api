@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Install packages') {
-            steps {
-                sh "npm install"
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
@@ -25,6 +19,12 @@ pipeline {
                         currentBuild.result = 'UNSTABLE'
                     }
                 }
+            }
+        }
+
+        stage('Install packages') {
+            steps {
+                sh "npm install"
             }
         }
 
