@@ -1,16 +1,16 @@
 pipeline {
-    agent {
-        docker { image 'node:24.0.0' }
-    }
+    agent any
 
     tools {
       nodejs "node"
     }
 
     stages {
-        stage('Docker build image') {
+        stage('Build Docker image') {
             steps {
-                sh "docker build -t my-nest-app ."
+                script {
+                    def image = docker.build("my-nest-app")
+                }
             }
         }
 
