@@ -15,7 +15,9 @@ pipeline {
       steps {
         sh "npm test"
       }
-      steps{
+    }
+    stage ("teste finalizado"){
+      steps {
         echo "Teste finalizado"
       }
     }
