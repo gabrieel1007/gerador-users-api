@@ -2,6 +2,7 @@ pipeline {
   // agent {
     
   // }
+  agent any
 
   tools {
     nodejs "node"
