@@ -5,23 +5,23 @@ pipeline {
   }
 
   stages {
-    stage('Install packages') {
+    stage ('Install packages') {
       steps {
         sh "npm install"
       }
     }
-    stage('Running tests') {
+    stage ('Running tests') {
       steps {
         sh "npm test"
       }
     }
-    stage ("teste finalizado"){
+    stage ("teste finalizado" ){
       steps {
         echo "Teste finalizado"
       }
     }
     stage ('Initialize Docker') {
-      def dockerHome = tool "myDocker"
+      def dockerHome = tool 'myDocker'
       env.PATH = "${dockerHome}/bin:${env.PATH}"
     }
     stage ('Build') {
