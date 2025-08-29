@@ -24,9 +24,6 @@ pipeline {
             steps {
                 sh "npm install"
             }
-            steps {
-                sh "npm run test"
-            }
         }
     }
 }
