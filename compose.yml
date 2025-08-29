@@ -1,0 +1,13 @@
+# PASSWORD: 5f5517e3cf9e40ada186f5f040191ba8
+
+services:
+  jenkins:
+    image: jenkins/jenkins:lts-jdk17
+    ports:
+      - '8080:8080'
+      - '50000:50000'
+    volumes:
+      - jenkins_home:/var/jenkins_home
+
+volumes:
+  jenkins_home:
