@@ -1,8 +1,7 @@
 pipeline {
-  // agent {
-    
-  // }
-  agent any
+  agent {
+    docker { image 'node:22.18.0-alpine3.22'}
+  }
 
   tools {
     nodejs "node"
@@ -11,12 +10,12 @@ pipeline {
   stages {
     stage('Install packages') {
       steps {
-        sh "npm install"
+        sh 'node --eval "npm install"'
       }
     }
     stage('Running tests') {
       steps {
-        sh "npm test"
+        sh 'node --eval "npm test"'
       }
     }
     stage ("teste finalizado"){
@@ -26,7 +25,7 @@ pipeline {
     }
     stage ('Build') {
       steps {
-        sh "docker build -t my-nest-app ."
+        sh 'docker build -t my-nest-app .'
       }
     }
   }
