@@ -21,7 +21,9 @@ pipeline {
       }
     }
     stage ('Build') {
-      agent { dockerFile true}
+      agent { 
+        dockerFile true
+      }
       steps {
         sh 'docker build -t my-nest-app .'
       }
