@@ -1,15 +1,21 @@
 pipeline {
+  agent any
+
+  tools {
+    nodejs "node"
+  }
+
   stages {
     stage('Install packages') {
-      agent {
-        docker {
-          image 'node:18'
-          reuseNode true
-        }
-      }
       steps {
         sh "npm install"
       }
     }
+    stage('Running tests') {
+      steps {
+        sh "npm test"
+      }
+    }
   }
+
 }
