@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-                customImage = docker.build("my-nestjs-app")
+                script {
+                    customImage = docker.build("my-nestjs-app")
+                }
             }
         }
 
