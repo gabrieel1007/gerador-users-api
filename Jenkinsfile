@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Install packages') {
             steps {
-               echo "Hello World"
+              sh "yarn install"
             }
         }
     }
