@@ -4,6 +4,12 @@ USER root
 
 RUN apt-get update && \
     apt-get install -y docker.io && \
+    # Só use o groupmod -g <GID> docker se tiver certeza que o GID do socket no host é 983. Verifique com:
+    # ls -ln /var/run/docker.sock
+    # Exemplo de saída:
+    # Se o número não for 983, substitua com o GID correto no Dockerfile.
+
+    groupmod -g 983 docker && \
     usermod -aG docker jenkins
 
 USER jenkins
