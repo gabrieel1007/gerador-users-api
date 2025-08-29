@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'node:22.18.0-alpine3.22' }
-    }
+    agent any
 
     tools {
       nodejs "node"
@@ -10,10 +8,7 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-                sh """
-                    docker build -t my-nestjs-app .
-                    docker tag my-nestjs-app
-                """
+                def customImage = docker.build("my-nestjs-app")
             }
         }
 
