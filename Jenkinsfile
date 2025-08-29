@@ -6,11 +6,12 @@ pipeline {
     }
 
     stages {
-        stage('Build Docker image') {
+        stage('Build Docker Image') {
             steps {
-                script {
-                    def image = docker.build("my-nest-app")
-                }
+                sh """
+                    docker build -t my-nestjs-app .
+                    docker tag my-nestjs-app
+                """
             }
         }
 
