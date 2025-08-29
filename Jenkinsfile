@@ -1,8 +1,9 @@
 pipeline {
-    agent any
-
-    tools {
-      nodejs "node"
+    agent {
+        docker {
+            image 'node:18-alpine'
+            args '-v /var/run/docker.sock:/var/run/docker.sock'
+        }
     }
 
     stages {
@@ -14,7 +15,7 @@ pipeline {
 
         stage('Install packages') {
             steps {
-              sh "npm install"
+                sh "npm install"
             }
         }
     }
